@@ -1,0 +1,52 @@
+.contenedor{
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    font-family: kanit;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedorFecha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dia{
+    margin: 15px;
+    font-size: 35px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+form .formu{
+    margin-right: 20px;
+}
+
+.contenedorTareas{
+    margin-left: 70px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.tarea{
+    border: 1px solid black;
+    background-color: greenyellow;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.realizada {
+    text-decoration: line-through;
+    background-color: darkolivegreen;
+}

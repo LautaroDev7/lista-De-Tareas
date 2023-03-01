@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedorFecha">
+            <div class="izquierda">
+                <div id="dia" class="dia"></div>
+                <div>
+                    <div id="mes" class="mes-anio"></div>
+                    <div id="anio" class="mes-anio"></div>
+                </div>
+            </div>
+            <div id="diaSemana" class="semana"></div>
+        </div>
+        <form onsubmit="agregarTarea(event)" >
+            <input type="text" name="tarea" autocomplete="off" placeholder="Nueva tarea" class="formu borde">
+            <button type="submit" class="agregarTarea formu">+</button>
+            <button type="button" class="botonOrden borde formu" onclick="ordenarTareas()">Ordenar</button>
+        </form>
+        <div id="contenedorTareas" class="contenedorTareas"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
